@@ -27,7 +27,7 @@ export class API {
   }
 
   async getAllProducts() {
-    return axios.get(this.withPath("/products"), {
+    return axios.get(this.withPath("/elements"), {
       headers: {
         "Authorization": this.generateAuthToken()
       }
@@ -36,7 +36,7 @@ export class API {
   }
 
   async getAllProducts2() {
-    return axios.get(this.withPath("/products2"), {
+    return axios.get(this.withPath("/elements2"), {
       headers: {
         "Authorization": this.generateAuthToken()
       }
@@ -45,7 +45,7 @@ export class API {
   }
 
   async getProduct(id) {
-    return axios.get(this.withPath("/product/" + id), {
+    return axios.get(this.withPath("/element/" + id), {
       headers: {
         "Authorization": this.generateAuthToken()
       }

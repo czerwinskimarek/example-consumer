@@ -27,7 +27,7 @@ describe('API Pact test', () => {
         uponReceiving: 'a request to get a product',
         withRequest: {
           method: 'GET',
-          path: '/product/10',
+          path: '/element/10',
           headers: {
             Authorization: like('Bearer 2019-01-14T11:34:18.045Z'),
           },
@@ -57,7 +57,7 @@ describe('API Pact test', () => {
           uponReceiving: 'a request to get a product',
           withRequest: {
             method: 'GET',
-            path: '/product/11',
+            path: '/element/11',
             headers: {
               'Authorization': like('Bearer 2019-01-14T11:34:18.045Z')
             }
@@ -83,7 +83,7 @@ describe('API Pact test', () => {
         uponReceiving: 'a request to get all products',
         withRequest: {
           method: 'GET',
-          path: '/products',
+          path: '/elements',
           headers: {
             Authorization: like('Bearer 2019-01-14T11:34:18.045Z'),
           },
@@ -116,7 +116,7 @@ describe('API Pact test', () => {
         uponReceiving: 'a request to get all products',
         withRequest: {
           method: 'GET',
-          path: '/products2',
+          path: '/elements2',
           headers: {
             Authorization: like('Bearer 2019-01-14T11:34:18.045Z'),
           },
