@@ -35,6 +35,15 @@ export class API {
     .then(r => r.data.map(p => new Product(p)));
   }
 
+  async getAllProducts2() {
+    return axios.get(this.withPath("/products2"), {
+      headers: {
+        "Authorization": this.generateAuthToken()
+      }
+    })
+    .then(r => r.data.map(p => new Product(p)));
+  }
+
   async getProduct(id) {
     return axios.get(this.withPath("/product/" + id), {
       headers: {
