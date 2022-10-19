@@ -63,4 +63,3 @@ To be able to run some of the commands locally, you will need to export the foll
 
 * `make test` - run the pact test locally
 * `make fake_ci` - run the CI process locally
-*
